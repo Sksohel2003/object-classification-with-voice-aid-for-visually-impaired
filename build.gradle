@@ -1,0 +1,57 @@
+//// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//
+//buildscript {
+//    repositories {
+//        google()
+//        jcenter()
+//
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:3.4.2'
+////        classpath 'de.undercouch:gradle-download-task:3.4.3'
+//        classpath 'de.undercouch:gradle-download-task:3.4.3'
+//
+//        // NOTE: Do not place your application dependencies here; they belong
+//        // in the individual module build.gradle files
+//    }
+//}
+//
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+////        mavenLocal()
+////        mavenCentral()
+//    }
+//}
+//
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
+buildscript {
+    repositories {
+        google()
+        mavenCentral() // ✅ Added Maven Central to replace JCenter
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+//        classpath 'com.android.tools.build:gradle:7.4.1' // Example, check for the latest version
+
+        classpath 'de.undercouch:gradle-download-task:3.4.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral() // ✅ Ensure all projects use Maven Central
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
