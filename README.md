@@ -1,4 +1,50 @@
-# ObjectDetector
-An android app which enables the blind people to get information about their surroundings. 
-The app identifies the objects which are pointed by the camera and on tapping the object (or bounding box surrounding the object), a voice is generated identifying the object and thus delivering an idea about the location of the object to the user. It uses the ssd_mobilenet_v1 architecture for object detection. 
-The model is saved as a .tflite file in the assets folder along with the labels
+# Object Classification with Voice Aid for Visually Impaired
+
+This Android application is designed to assist visually impaired individuals by providing real-time object detection with distance estimation and voice output. It uses the device's camera to automatically detect nearby objects and announces their names and approximate distances without any user interaction.
+
+## 🧠 Key Features
+
+- 📷 **Real-time Object Detection** using TensorFlow Lite
+- 🔊 **Voice Output** for identified objects
+- 📏 **Distance Estimation** to inform users how far the object is
+- 🎙️ **Voice Commands**: Say "extract text" to switch to text extraction mode, and "stop extracting text" to return to object detection
+- 🚫 **No Tap Required**: App automatically starts detection on launch
+
+## 🛠️ Tech Stack
+
+- **Language:** Java
+- **Framework:** Android SDK
+- **ML Framework:** TensorFlow Lite (TFLite)
+- **Voice Output:** Android Text-to-Speech (TTS)
+- **Custom Object Labels:** Based on COCO dataset with additional custom class handling
+- **Distance Calculation:** Based on camera's field of view and object bounding box
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sksohel2003/object-classification-with-voice-aid-for-visually-impaired.git
+Open in Android Studio.
+
+Build and run the app on a physical Android device with camera and microphone access.
+
+⚠️ Note: TFLite model file and labels must be placed in the assets folder.
+
+📁 Folder Structure
+perl
+Copy
+Edit
+app/
+├── java/
+│   └── ... (MainActivity, DetectorActivity, ObjectDetectorHelper, etc.)
+├── res/
+│   └── layout, values, drawable
+├── assets/
+│   └── detect.tflite
+│   └── labelmap.txt
+👨‍💻 Developer
+Name: Sohel Shaikh
+
+Email: sohelshaikh123@gmail.com
+
+GitHub: Sksohel2003
