@@ -30,10 +30,6 @@ Build and run the app on a physical Android device with camera and microphone ac
 
 ⚠️ Note: TFLite model file and labels must be placed in the assets folder.
 
-📁 Folder Structure
-perl
-Copy
-Edit
 app/
 ├── java/
 │   └── ... (MainActivity, DetectorActivity, ObjectDetectorHelper, etc.)
@@ -42,9 +38,10 @@ app/
 ├── assets/
 │   └── detect.tflite
 │   └── labelmap.txt
-👨‍💻 Developer
-Name: Sohel Shaikh
 
-Email: sohelshaikh123@gmail.com
+👨‍💻 Developer
+Name: Sohel Shaik
+
+Email: shaiksohel120@gmail.com
 
 GitHub: Sksohel2003
