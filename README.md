@@ -33,9 +33,4 @@ Build and run the app on a physical Android device with camera and microphone ac
 ![image](https://github.com/user-attachments/assets/786e64b9-05aa-40c4-88d3-6ba99a6d53d0)
 
 
-👨‍💻 Developer
-Name: Sohel Shaik
 
-Email: shaiksohel120@gmail.com
-
-GitHub: Sksohel2003
